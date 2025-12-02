@@ -1,0 +1,16 @@
+public class badonio7 {
+    public static void main(String[] args) {
+        int[] arr = {-1, -5, 3, -2, 4};
+
+        // Convert negatives to positive
+        for (int i = 0; i < arr.length; i++) {
+            arr[i] = Math.abs(arr[i]);
+        }
+
+        // Print the updated array
+        System.out.print("Array with positive values: ");
+        for (int num : arr) {
+            System.out.print(num + " ");
+        }
+    }
+}
