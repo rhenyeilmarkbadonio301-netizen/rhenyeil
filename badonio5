@@ -1,0 +1,15 @@
+public class FindValue {
+    public static void main(String[] args) {
+        int[] numbers = {3, 7, 1, 9, 5, 7};
+        int target = 9; // Value to find
+
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] == target) {
+                System.out.println("Found " + target + " at index " + i);
+                break; // Stop the loop immediately
+            }
+        }
+
+        System.out.println("Loop ended.");
+    }
+}
