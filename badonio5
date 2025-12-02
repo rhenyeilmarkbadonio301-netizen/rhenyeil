@@ -1,0 +1,20 @@
+public class badonio4{
+    public static void main(String[] args) {
+        int[] numbers = {12, 5, 8, 20, 3, 15, 7};
+        
+        // Initialize min and max with the first element
+        int min = numbers[0];
+        int max = numbers[0];
+        
+        for (int i = 1; i < numbers.length; i++) {
+            if (numbers[i] < min) {
+                min = numbers[i]; // Update min if current number is smaller
+            }
+            if (numbers[i] > max) {
+                max = numbers[i]; // Update max if current number is larger
+            }
+        }
+        
+        System.out.println("Smallest number: " + min);
+        System.out.println("Largest number: " + max);
+    }
